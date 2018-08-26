@@ -14,6 +14,7 @@ class Counter extends Component {
   }
 
   getBadgeClasses() {
+    //use descriptive names to make the code readable
     let classes = "badge m-2 badge-";
     classes += this.state.count === 0 ? "warning" : "primary";
     return classes;
