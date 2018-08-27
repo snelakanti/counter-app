@@ -36,7 +36,7 @@ class Counter extends Component {
     return count === 0 ? "Zero" : count;
   }
 
-  handleIncrement = () => console.log("Increment handled", this);
+  handleIncrement = () => this.setState({ count: this.state.count + 1 });
 }
 
 export default Counter;
